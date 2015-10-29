@@ -1,0 +1,72 @@
+C51 COMPILER V8.02   LED_FOR_KEY_SWITCH_CTRL                                               10/29/2015 22:13:07 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE LED_FOR_KEY_SWITCH_CTRL
+OBJECT MODULE PLACED IN led_for_key_switch_ctrl.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE led_for_key_switch_ctrl.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          
+   2          
+   3          #include "reg51.h"
+   4          #include "intrins.h"
+   5          
+   6          #define uint unsigned int
+   7          #define uchar unsigned char
+   8          
+   9          sbit K1=P1^4;
+  10          sbit K2=P1^5;
+  11          sbit K3=P1^6;
+  12          sbit K4=P1^7;
+  13          
+  14          void DelayMS(uint presetTime){          //An inner Interface avoid for incorrect operation
+  15   1              uchar i;
+  16   1              while(presetTime--){
+  17   2                      for (i = 0; i < 120; ++i)
+  18   2                      {
+  19   3                              /* code */
+  20   3                      }
+  21   2              }
+  22   1      }
+  23          
+  24          void matchStatus(P1Status){             //An interface Match to key status,feedback led status
+  25   1              switch (P1Status)
+  26   1                       {
+  27   2                              case  0xef:{P0=_cror_(P0,1);}    break;
+  28   2                          case  0xdf:{P0=_crol_(P0,1);}        break;
+  29   2                              case  0xbf:{P2=_cror_(P2,1);}    break;
+  30   2                              case  0x7f:{P2=_crol_(P2,1);}    
+  31   2                       }
+  32   1      }
+  33          
+  34          void main(int argc, char const *argv[])
+  35          {
+  36   1              /* code */
+  37   1              P0=0xfe;        //initiate port(p0&p2)
+  38   1              P2=0xfe;
+  39   1              P1=0xff;        //initiate port(p1):set ReadyStatus
+  40   1      
+  41   1              while(1){
+  42   2                      matchStatus(P1);
+  43   2                      DelayMS(150);
+  44   2              }
+  45   1      }
+*** WARNING C280 IN LINE 34 OF LED_FOR_KEY_SWITCH_CTRL.C: 'argc': unreferenced local variable
+*** WARNING C280 IN LINE 34 OF LED_FOR_KEY_SWITCH_CTRL.C: 'argv': unreferenced local variable
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    131    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       5
+C51 COMPILER V8.02   LED_FOR_KEY_SWITCH_CTRL                                               10/29/2015 22:13:07 PAGE 2   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  2 WARNING(S),  0 ERROR(S)

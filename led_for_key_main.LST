@@ -1,0 +1,70 @@
+C51 COMPILER V8.02   LED_FOR_KEY_MAIN                                                      10/29/2015 22:15:15 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE LED_FOR_KEY_MAIN
+OBJECT MODULE PLACED IN led_for_key_main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE led_for_key_main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          
+   2          #include "reg51.h"
+   3          #include "intrins.h"
+   4          
+   5          #define uchar unsigned char
+   6          #define uint  unsigned char
+   7          
+   8          
+   9          
+  10          sbit K1=P1^0;
+  11          sbit K2=P1^1;
+  12          sbit K3=P1^2;
+  13          sbit K4=P1^3;
+  14          
+  15          void DelayMS(uint presetTime){          //An inner Interface avoid for incorrect operation
+  16   1              uchar i;
+  17   1              while(presetTime--){
+  18   2                      for (i = 0; i < 120; ++i)
+  19   2                      {
+  20   3                              /* code */
+  21   3                      }
+  22   2              }
+  23   1      }
+  24          
+  25          void keyInteration(uint status){        //Search the Status of key, feedback status on LED
+  26   1              switch(status){
+  27   2                      case 0xef:{P0=_cror_(P0,1);} break;     //Move to the right
+  28   2                      case 0xdf:{P0=_crol_(P0,1);} break;
+  29   2                      case 0xbf:{P2=_cror_(P2,1);} break;     //Move to the left
+  30   2                      case 0x7f:{P2=_crol_(P2,1);} ;
+  31   2      
+  32   2              }
+  33   1      }
+  34          
+  35          void main(){    //Interface
+  36   1              P0=0xfe;        //initiate port(p0&p2)
+  37   1              P2=0xfe;
+  38   1              P1=0xff;        //initiate port(p1):set ReadyStatus
+  39   1      
+  40   1              while(1){
+  41   2                      keyInteration(P1);
+  42   2                      DelayMS(150);
+  43   2              }
+  44   1              
+  45   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    112    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+C51 COMPILER V8.02   LED_FOR_KEY_MAIN                                                      10/29/2015 22:15:15 PAGE 2   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

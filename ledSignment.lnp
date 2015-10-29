@@ -1,0 +1,5 @@
+"STARTUP.obj",
+"led_for_key_main.obj",
+"led_for_key_if_ctrl.obj",
+"led_for_key_switch_ctrl.obj" 
+TO "ledSignment" 

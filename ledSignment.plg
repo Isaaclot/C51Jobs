@@ -1,0 +1,203 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+E:\gitcafeProject\c51\ledSignment.uv2
+Project File Date:  10/29/2015
+
+<h2>Output:</h2>
+compiling led_for_key_main.c...
+led_for_key_main.c(2): warning C318: can't open file 'led_for_key_main.h'
+LED_FOR_KEY_MAIN.C(17): warning C206: 'which': missing function-prototype
+LED_FOR_KEY_MAIN.C(17): error C267: 'which': requires ANSI-style prototype
+LED_FOR_KEY_MAIN.C(17): error C141: syntax error near '{'
+LED_FOR_KEY_MAIN.C(18): error C141: syntax error near 'int'
+LED_FOR_KEY_MAIN.C(18): error C141: syntax error near ')'
+led_for_key_main.c - 4 Error(s), 2 Warning(s).
+compiling led_for_key_main.c...
+led_for_key_main.c(2): warning C318: can't open file 'led_for_key_main.h'
+LED_FOR_KEY_MAIN.C(17): warning C206: 'which': missing function-prototype
+LED_FOR_KEY_MAIN.C(17): error C267: 'which': requires ANSI-style prototype
+LED_FOR_KEY_MAIN.C(17): error C141: syntax error near '{'
+led_for_key_main.c - 2 Error(s), 2 Warning(s).
+compiling led_for_key_main.c...
+LED_FOR_KEY_MAIN.C(16): warning C206: 'which': missing function-prototype
+LED_FOR_KEY_MAIN.C(16): error C267: 'which': requires ANSI-style prototype
+LED_FOR_KEY_MAIN.C(16): error C141: syntax error near '{'
+led_for_key_main.c - 2 Error(s), 1 Warning(s).
+compiling led_for_key_main.c...
+led_for_key_main.c - 0 Error(s), 0 Warning(s).
+compiling led_for_key_main.c...
+LED_FOR_KEY_MAIN.C(26): warning C206: '_cror_': missing function-prototype
+LED_FOR_KEY_MAIN.C(26): error C267: '_cror_': requires ANSI-style prototype
+LED_FOR_KEY_MAIN.C(26): error C141: syntax error near 'break'
+led_for_key_main.c - 2 Error(s), 1 Warning(s).
+compiling led_for_key_main.c...
+LED_FOR_KEY_MAIN.C(26): warning C206: '_cror_': missing function-prototype
+LED_FOR_KEY_MAIN.C(26): error C267: '_cror_': requires ANSI-style prototype
+led_for_key_main.c - 1 Error(s), 1 Warning(s).
+compiling led_for_key_main.c...
+led_for_key_main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling led_for_key_main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=127
+"ledSignment" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling led_for_key_main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=127
+"ledSignment" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=127
+"ledSignment" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=127
+"ledSignment" - 0 Error(s), 0 Warning(s).
+compiling led_for_key_if_ctrl.c...
+led_for_key_if_ctrl.c - 0 Error(s), 0 Warning(s).
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argv': unreferenced local variable
+led_for_key_if_ctrl.c - 0 Error(s), 2 Warning(s).
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argv': unreferenced local variable
+led_for_key_if_ctrl.c - 0 Error(s), 2 Warning(s).
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(31): error C202: 'true': undefined identifier
+led_for_key_if_ctrl.c - 1 Error(s), 0 Warning(s).
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argv': unreferenced local variable
+led_for_key_if_ctrl.c - 0 Error(s), 2 Warning(s).
+compiling led_for_key_switch_ctrl.c...
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argv': unreferenced local variable
+led_for_key_switch_ctrl.c - 0 Error(s), 2 Warning(s).
+compiling led_for_key_switch_ctrl.c...
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argv': unreferenced local variable
+led_for_key_switch_ctrl.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argv': unreferenced local variable
+compiling led_for_key_switch_ctrl.c...
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argv': unreferenced local variable
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling led_for_key_main.c...
+compiling led_for_key_if_ctrl.c...
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_IF_CTRL.C(24): warning C280: 'argv': unreferenced local variable
+compiling led_for_key_switch_ctrl.c...
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argc': unreferenced local variable
+LED_FOR_KEY_SWITCH_CTRL.C(34): warning C280: 'argv': unreferenced local variable
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
+compiling led_for_key_main.c...
+led_for_key_main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_if_ctrl.obj (LED_FOR_KEY_IF_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _MAIN
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAYMS
+    MODULE:  led_for_key_switch_ctrl.obj (LED_FOR_KEY_SWITCH_CTRL)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_IF_CTRL
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MAIN?LED_FOR_KEY_SWITCH_CTRL
+Program Size: data=19.0 xdata=0 code=393
+Target not created
